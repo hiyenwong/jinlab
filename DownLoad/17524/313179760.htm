@@ -1,0 +1,525 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1"><link href="http://resumeqanew.51job.com/App_Themes/rsmSkin/rsm.css" type="text/css" rel="stylesheet" /><link href="http://resumeqanew.51job.com/App_Themes/rsmStyle.css" type="text/css" rel="stylesheet" /><title>
+	ResumeQA系统
+</title></head>
+<body style=" padding-top:20px;" >
+<form name="form1" method="post" action="SchResume.aspx?ret_flag=1&amp;err_info=&amp;userid=&amp;id=313179760&amp;l=C&amp;S=c&amp;key=&amp;m=f" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzQ3OTQ0NDI3D2QWAgIDD2QWKmYPDxYCHgdFbmFibGVkaGRkAgEPDxYEHgRUZXh0BQ5FbmdsaXNoIFJlc3VtZR4LTmF2aWdhdGVVcmwFI1NjaHJlc3VtZS5hc3B4P2lkPTMxMzE3OTc2MCZsPUUmcz1jZGQCAg8PFgYeCkZvbnRfTmFtZXMVAQVBcmlhbB8BBRgzMTMxNzk3NjDlj7fkuK3mlofnroDljoYeBF8hU0ICgARkZAIDDzwrAAkBAA8WBB4IRGF0YUtleXMWAB4LXyFJdGVtQ291bnRmZGQCBA8PFgIfAQUP5a+55peg5b+n5YWs5byAZGQCBQ8PFgIfAQUKMjAxNC0wNS0wOGRkAgcPPCsACQEADxYEHwUWAB8GZmRkAggPDxYCHwEFIzxmb250IGNvbG9yPXJlZD7msqHmnInpmYTku7Y8L2ZvbnQ+ZGQCCQ88KwAJAgAPFgQfBRYAHwYCAWQIFgQeC0JvcmRlcldpZHRoGwAAAAAAAPA/AQAAAB8EAiAWAmYPZBYCZg8VAwd5aS54aWFvETIwMTQtNS04IDE2OjAzOjA5RuS8geS4muS4vuaKpeeugOWOhuacieW5v+WRiuS/oeaBry/lnoPlnL7nroDljobvvIzmlYXnlLPor7flsY/olL3nroDljoZkAgoPDxYCHwFlZGQCCw8WAh4IZGlzYWJsZWRkZAIMDxYCHwhkZAINDxYCHwhkZAIODxYCHwhkZAIPDxYCHwhkZAIQDw8WAh8AaGRkAhEPFgIfCGRkAhIPFgIfCGRkAhMPFgIfCGRkAhQPFgIfCGRkAhUPFgIfCGRkZJmvASlseoIWT6j4+FYORdC1E6x/" />
+
+<script language="javascript" type="text/javascript">
+   function AddCommand()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "ActComment.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,700,600);
+      return false;
+   }
+   
+   function AddLabel()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "ActBucket.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,700,500);
+      return false;
+   }
+   
+   function SendMessage()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "ActMessage.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,430,320);
+      return false;
+   }
+   
+   function SendResume()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "ActResume.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,700,600);
+      return false;
+   }
+   
+   function SendMail()
+   {
+      var userid = document.getElementById("userid").value;
+      var email = document.getElementById("email").value;
+      var name = document.getElementById("name").value;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+
+        
+      var url = "ActEmail.aspx?id=" + userid  + "&mail=" + email + "&name=" + name;
+      winopen(url,500,600);
+      return false;
+   }
+   
+   function RefreshResume()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "ChangeDate.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,500,300);
+      return false;
+   }
+   
+   function SchRecommend()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "SchRecommend.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,400,450);
+      return false;
+   }
+   
+   function SchMiscInfo()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "SchMiscInfo.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,600,600);
+      return false;
+   }
+   
+   //附件查看
+   function SchAttach()
+   {
+     var userid = document.getElementById("userid").value;
+     var url="AttachShow.aspx?id=" + userid;
+     if (JTrim(userid) == "")
+     {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+     }
+     winopen(url,800,450);
+     return false;
+   }
+   
+   
+   function SchCVLetter()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "SchCVLetter.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,600,600);
+      return false;
+   }
+
+  
+   function SchBucket()
+   {
+      var userid = document.getElementById("userid").value;
+      var url = "SchBucket.aspx?id=" + userid;
+      if (JTrim(userid) == "")
+      {
+          alert("参数(userid)错误，不能进行此操作！");
+          return false;
+      }
+      winopen(url,550,450);
+      return false;
+   }
+   
+	function toCancel(mode)
+	{
+		if ( mode == "c" || mode == "C") 
+		{
+			window.close ()
+		}else
+		{
+			window.location.href  = "SchDft.aspx";
+		}
+	}
+   
+   function winopen(url,wth,hgt)
+   {
+     var left = (screen.width-wth)/2-15;
+     var top  = (screen.height-hgt)/2-70;
+     window.open(url,"", "scrollbars=yes,fullscreen=no,channelmode=no,location=no,toolbar=no,status=yes,menubar=no,resizable=yes,left="+left+",top="+top+",width="+wth+",height="+hgt);
+   }
+   
+   //JTrim
+    function JTrim(str)    
+    {
+       
+	    var i = 0;
+	    var len = str.length;
+	    if ( str == "" ) return( str );
+	    j = len -1;
+	    flagbegin = true;    
+	    flagend = true;    
+	    while ( flagbegin == true && i< len) 
+	    {
+	       if ( str.charAt(i) == " " ) 
+		    {
+		      i=i+1;
+		      flagbegin=true;
+		    }
+		    else
+		    {
+			    flagbegin=false;
+		    }
+	    } 
+    	       
+	    while  (flagend== true && j>=0)
+	    {
+	        if (str.charAt(j)==" ")
+		    { 
+			    j=j-1;
+			    flagend=true;
+		    }
+		    else
+		    {
+			    flagend=false;
+		    }
+	    }
+    	
+	    if ( i > j ) return ("")
+    	
+	    trimstr = str.substring(i,j+1);
+	    return trimstr;
+    } 
+
+
+</script>
+<table width="80%"  border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+     <td style=" width:13%">&nbsp;</td>
+     <td style=" width:87%" align="right" colspan="2"><input type="submit" name="topDownLoad" value="下载" id="topDownLoad" disabled="disabled" class="colButton3" />&nbsp;&nbsp;&nbsp;&nbsp;<a id="englishCv" href="Schresume.aspx?id=313179760&amp;l=E&amp;s=c">English Resume</a></td>
+  </tr>
+  <tr>
+     <td align="right" style=" width:13%">&nbsp;</td>
+     <td class="cvTitle" style=" width:87%" colspan="2"><b><span id="RsmID"><font face="Arial">313179760号中文简历</font></span></b></td>
+  </tr>
+  <tr>
+    <td style="width:20%" valign="top">
+    <table width="100%"  border="0" cellpadding="3">
+      <tr>
+        <td style="height: 18px" class="titleFont">
+            该用户的其他简历</td>
+      </tr>
+      <tr>
+        <td>
+            
+            </td>
+      </tr>
+    </table></td>
+    <td  style=" width:80%" valign="top">
+      <table width="100%"  border="0" cellpadding="2">
+         <tr>
+            <td class="titleFont" colspan="3"><b>&nbsp;简历公开程度：<span id="lblOpen" style="display:inline-block;">对无忧公开</span></b></td>
+         </tr>
+         <tr>
+            <td class="titleFont" colspan="3"><b>&nbsp;简历更新日期：<span id="lblDate" style="display:inline-block;">2014-05-08</span></b></td>
+         </tr>
+         <tr>
+            <td colspan="3" id="rsmContent">
+                <html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <style>
+				table,td,p { font-family:'宋体'; font-size:12px; line-height:150%; }
+				.ResTitleFot { font-family:'宋体'; font-size:14px; }
+				.ResTitleTbBd { border:solid 1px #cccccc; }
+				.ResTitleTbBd1 { border:solid 1px #ffffff; }
+				.ResTbLfPd { padding-left:10px; }
+				.SubTitleTbBd { padding-left:10px; border-top:solid 1px #cccccc; }
+			</style>
+  </head>
+  <script>
+    <!--
+			 
+				function ShowAttach(userid,attachid)
+				{	
+					var newwin = window.open('','attachment');
+					newwin.document.write('<img src = "http://ehire.51job.com/hr20/candidate/ReadAttach.asp?userid=' + userid + '&attachid=' + attachid + '">');
+					newwin.document.close();
+				}
+			
+			-->
+  </script>
+  <body topmargin="0" marginheight="0">
+    <table width="600" border="0" cellspacing="0" cellpadding="1" align="center">
+      <tr height="20">
+        <td width="18%">
+					姓<img src="http://resumeqanew.51job.com/im/space.gif" width="24" height="1" border="0">名：
+				</td>
+        <td width="32%">米尔企业形象设计公司</td>
+        <td width="18%">
+					性<img src="http://resumeqanew.51job.com/im/space.gif" width="24" border="0" height="1">别：
+				</td>
+        <td width="32%">男</td>
+      </tr>
+      <tr height="20">
+        <td> 出生日期：</td>
+        <td>1986年2月
+		9日
+		</td>
+        <td>
+          户<img src="http://resumeqanew.51job.com/im/space.gif" width="24" border="0" height="1">口：
+        </td>
+        <td></td>
+      </tr>
+      <tr height="20">
+        <td> 居 住 地：</td>
+        <td>西安-雁塔区</td>
+        <td> 工作年限：</td>
+        <td>三年以上</td>
+      </tr>
+      <tr height="20">
+        <td> 行业：</td>
+        <td>广告</td>
+      </tr>
+      <tr height="20">
+        <td> 电子邮件：</td>
+        <td colspan="3">543261159@qq.com</td>
+      </tr>
+      <tr height="20">
+        <td> 移动电话：</td>
+        <td colspan="3">13772432699</td>
+      </tr>
+    </table>
+    <table width="600" border="0" cellspacing="0" cellpadding="1" align="center">
+      <tr bgcolor="#EDEDED" height="25">
+        <td colspan="2" class="SubTitleTbBd">
+          <b>求 职 意 向</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <img src="http://resumeqanew.51job.com/im/space.gif" height="5" width="1">
+        </td>
+      </tr>
+      <tr height="20">
+        <td width="18%"> 工作性质：</td>
+        <td width="82%">全职</td>
+      </tr>
+      <tr height="20">
+        <td width="18%"> 期望工资：</td>
+        <td width="82%">面议</td>
+      </tr>
+    </table>
+    <table width="600" border="0" cellspacing="0" cellpadding="0" align="center">
+      <tr bgcolor="#EDEDED" height="25">
+        <td class="SubTitleTbBd">
+          <b>工 作 经 验</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table align="center" border="0" cellPadding="1" cellSpacing="0" width="580">
+            <tr>
+              <td colspan="4">2014
+			/1--2014
+			/2：西安米尔企业形象设计有限公司
+						[1个月]
+					</td>
+            </tr>
+            <tr>
+              <td width="18%"> 所属行业：</td>
+              <td colspan="3" width="82%">广告</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <b>AE</b>
+              </td>
+              <td colspan="2">
+                <b>AE</b>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="4" id="Cur_Val">西安米尔企业形象设计有限公司，秉承“感受专业，享受服务”的服务理念，承接企业画册、品牌设计、LOGO设计服务项目。致力于推广企业品牌视觉识别系统，深度挖掘企业应用价值，打造强势视觉平台。
+        
+
+
+         我             企业VI视觉系统
+         们             企业文化长廊
+         能———       企业宣传册
+         做             招商手册
+         的             商务PPT
+
+
+贵公司如果要招聘一个平面设计人员，每年的费用约为3.5——4.5万，这只是一个单纯的工资福利支出，而且您招聘的这个设计人员能力有一定的范围，好的设计师会选择一条对他事业更有发展的前景的公司。
+
+况且4万RMB
+可以设计200-250页的画册，
+可以制作600个X展架
+可以制作1-2个宣传视频
+这样仔细核算下，您每年招聘一个平面设计师非常不划算的。
+我们公司可以给您提供一切日常上的宣传设计制作，以最低的价格，给您呈现出最好的东西，做您公司前进路上的“垫脚石”</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+            </td>
+         </tr>
+         <!--附件部分-->
+         <tr>
+            <td>
+            </td>
+            <td height="20" style="background-color: #EDEDED; width: 583px;">
+                <b>&nbsp;附件</b></td>
+            <td>
+            </td>
+         </tr>
+         <tr>
+            <td>
+            </td>
+            <td align="center" style="width: 583px">
+                
+                <span id="Attach_NoData"><font color=red>没有附件</font></span>
+            </td>
+            <td>
+            </td>
+         </tr>
+         <!--评语部分-->
+         <tr> 
+            <td></td>
+            <td align="left" style="background-color: #EDEDED; width:97%;"><b>&nbsp;简 历 评 语</b></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td align="left" style="text-align: center; width:97%;">
+                <table id="DataList2" cellspacing="0" border="0" width="100%">
+	<tr>
+		<td>
+                            <table cellspacing="0" cellpadding="3" width="100%">
+                               <tr>
+		                           <td width="4%" align="center"><img src="http://resumeqanew.51job.com/img/dot.gif" alt="*" /></td>
+		                           <td width="96%" align="left">
+		                           yi.xiao
+		                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		                           2014-5-8 16:03:09
+		                           </td>
+		                       </tr>
+		                       <tr>
+		                            <td width="4%">&nbsp;</td>
+		                            <td width="96%" align="left">
+		                            企业举报简历有广告信息/垃圾简历，故申请屏蔽简历
+		                            </td>
+		                       </tr>
+                            </table>
+                        </td>
+	</tr>
+</table>
+                <span id="Label_NoData"></span>
+            </td>
+            <td></td>
+         </tr>
+         
+         <tr>
+            <td colspan="3">
+                <table width="100%"  border="0" cellpadding="5">
+                  <tr>
+                      <td style=" width:12%">&nbsp;<input name="recommend1" type="button" id="recommend1" onclick="JavaScript:SchRecommend()" class="colButton3" value="推荐历史" /></td>
+                      <td style=" width:12%">&nbsp;<input name="recommend2" type="button" id="recommend2" onclick="JavaScript:SchBucket()" class="colButton3" value="标签" /></td>
+                      <td style=" width:12%">&nbsp;<input name="recommend3" type="button" id="recommend3" onclick="JavaScript:SchMiscInfo()" class="colButton3" value="附加信息" /></td>
+                      <td style=" width:12%">&nbsp;<input name="recommend4" type="button" id="recommend4" onclick="JavaScript:SchCVLetter()" class="colButton3" value="求职信" /></td>                      
+                      <td style=" width:12%">&nbsp;<input name="recommend5" type="button" id="recommend5" onclick="JavaScript:SchAttach()" class="colButton3" value="附件" /></td>
+                      <td colspan="2">&nbsp;<input type="submit" name="DownUpload" value="下载" id="DownUpload" disabled="disabled" class="colButton3" /></td>
+                  </tr>
+                  <tr>
+                      <td style=" width:12%">&nbsp;<input name="addcommand" type="button" id="addcommand" class="colButton3" value="加评语" onclick="javascript:AddCommand()" /></td>
+                      <td style=" width:12%">&nbsp;<input name="addlabel" type="button" id="addlabel" class="colButton3" value="加标签" onclick="javascript:AddLabel()" /></td>
+                      <td style=" width:12%">&nbsp;<input name="sendresume" type="button" id="sendresume" class="colButton3" value="发送简历" onclick="javascript:SendResume()" /></td>
+                      <td style=" width:12%">&nbsp;<input name="sendmail" type="button" id="sendmail" class="colButton3" value="发送邮件" onclick="javascript:SendMail()" /></td>
+                      <td style=" width:12%">&nbsp;<input name="sendmessage" type="button" id="sendmessage" class="colButton3" value="发送消息" onclick="javascript:SendMessage()" /></td>
+                      <td style=" width:12%">&nbsp;<input type="submit" name="refreshresume" value="刷新简历" onclick="javascript:RefreshResume();" id="refreshresume" class="colButton3" /></td>
+                      <td>&nbsp;<input name="cancel" type="button" class="colButton" value="取消" onclick="javascript:toCancel('c')" /></td>
+                  </tr>
+              </table>
+            </td>
+         </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<input type="hidden" name="userid" id="userid" value="313179760" />
+<input type="hidden" name="name" id="name" value="%e7%b1%b3%e5%b0%94%e4%bc%81%e4%b8%9a%e5%bd%a2%e8%b1%a1%e8%ae%be%e8%ae%a1%e5%85%ac%e5%8f%b8" />
+<input type="hidden" name="email" id="email" value="543261159@qq.com" />
+<input type="hidden" name="keyword" id="keyword" />
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEgKH4PfGCAKFnqv2DAKyoqaeCwKyopqeCwKyop6eCwKyorKeCwKyoraeCwKqt4iQDgKygZ/gCAKJsp3CCAKEivbfBgL13/uJAQLBw+XxDAKYwOf0CwLr94HeAgL7uPQdArLNxoMNAt3l4tAJs9fdx25+Z8ggZdOXF5+5odtTcLo=" /></form>
+
+<script language="javascript" type="text/javascript" defer="defer">
+
+    var keyword=document.getElementById('keyword').value;
+    if (keyword!="" && keyword!="'")
+    {          
+        // /gi 正则表达式 全局 忽略大小写
+        var regS = new RegExp(keyword,"gi");
+
+        var AllTD = document.getElementsByTagName('td');
+        for(var i=0;i<AllTD.length;i++)
+        {
+           //本TD内部无嵌套标签
+           if (AllTD[i].innerHTML.indexOf('<') == -1 && AllTD[i].innerHTML.indexOf('>') == -1)
+           {
+              //小标题暂去不掉(带:的)
+              AllTD[i].innerHTML=AllTD[i].innerHTML.replace(regS,"<font color='red'>" + keyword + "</font>");
+           }
+        }
+         
+        //<b>加粗的所有标签    
+        var AllB = document.getElementsByTagName('b');
+        for(var i=0;i<AllB.length;i++)
+        {  
+           //本<B>内部无嵌套标签         
+           if (AllB[i].innerHTML.indexOf('<') == -1 && AllB[i].innerHTML.indexOf('>') == -1)
+           {
+              if(AllB[i].parentNode.className != "SubTitleTbBd")  //去掉标题文字
+              {
+                 AllB[i].innerHTML = AllB[i].innerHTML.replace(regS,"<font color='red'>" + keyword + "</font>");
+              }
+           }
+        }
+    }
+</script>
+</body>
+</html>
